@@ -1,8 +1,9 @@
 body{
     margin: 20px;
     background-color: whitesmoke;
-    padding-top: 60px;
-    padding-left: 85px;
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 10px;
     
 }
 .header{
@@ -24,6 +25,7 @@ body{
     right: 0;
 
 }
+
 
 .sidebar{
     position: fixed;
@@ -122,6 +124,27 @@ body{
     border-width: 1px;
     border-color:  rgb(230, 224, 224);
     border-style: solid;
+    position: relative;
+}
+
+.tooltip{
+    background-color: rgba(53, 50, 50, 0.968);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 14px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -40px;
+    opacity: 0;
+    pointer-events: none;
+}
+ 
+.search-button:hover .tooltip{
+    opacity: 1;
+    
 }
 .mic-button{
     height: 45px;
@@ -129,6 +152,19 @@ body{
     border: none;
     border-radius: 50%;
     margin-right: 10px;  
+    position: relative;
+}
+.mic-button:hover .tooltip{
+    opacity: 1;
+    width: 150px;
+}
+
+.create-buttun{
+    position: relative;
+
+}
+.create-buttun:hover .tooltip{
+    opacity: 1;
 }
 .micicon{
     height: 30px;
